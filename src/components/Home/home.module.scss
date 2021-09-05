@@ -1,0 +1,48 @@
+.home {
+  padding: 48px;
+}
+
+@media screen and (min-width: 1500px) {
+  .home {
+    margin: 0 64px;
+  }
+}
+
+.header {
+  margin: 0 0 64px 0;
+
+  > .title {
+    font-size: 4rem;
+    margin: 0 0 24px 0;
+  }
+
+  > .subtitle {
+    font-size: 1.25rem;
+    font-weight: 100;
+    margin: 0;
+  }
+
+  hr {
+    border: 1px solid #ababab;
+  }
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 24px;
+}
+
+@media screen and (min-width: 661px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+  }
+}

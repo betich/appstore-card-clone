@@ -5,11 +5,14 @@
       "@styles/*": ["src/styles/*"],
       "@elements/*": ["src/elements/*"],
       "@components/*": ["src/components/*"],
+      "@elements": ["src/elements/index.ts"],
+      "@components": ["src/components/index.ts"],
       "@pages/*": ["src/pages/*"],
       "@helpers/*": ["src/helpers/*"],
       "@types": ["src/@types/index.ts"],
       "@types/*": ["src/@types/*"],
       "@modules/*": ["src/modules/*"],
+      "@modules": ["src/modules/index.ts"],
       "@utils/*": ["src/utils/*"]
     },
     "target": "es5",
@@ -26,6 +29,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/Home/index.tss"],
   "exclude": ["node_modules"]
 }

@@ -1,0 +1,90 @@
+.home {
+  padding: 48px;
+}
+
+@media screen and (min-width: 1500px) {
+  .home {
+    margin: 0 64px;
+  }
+}
+
+.header {
+  margin: 0 0 64px 0;
+
+  > .title {
+    font-size: 4rem;
+    margin: 0 0 24px 0;
+  }
+
+  > .subtitle {
+    font-size: 1.25rem;
+    font-weight: 100;
+    margin: 0;
+  }
+
+  hr {
+    border: 1px solid #ababab;
+  }
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 24px;
+}
+
+@media screen and (min-width: 661px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+  }
+}
+
+/* */
+
+.block {
+  cursor: pointer;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 10%;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+
+  > .image {
+    object-fit: cover;
+    border-radius: 10%;
+    width: 100%;
+  }
+}
+
+.block > .header {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  color: #fff;
+  margin: 24px;
+
+  > .category {
+    margin: 0;
+    font-weight: 300;
+  }
+
+  > .title {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .block {
+    margin: 0 auto;
+    max-width: 350px;
+  }
+}

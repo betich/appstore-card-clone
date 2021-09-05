@@ -1,0 +1,84 @@
+.overlay {
+  position: absolute !important;
+  top: 75px;
+}
+
+.block {
+  overflow: hidden;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  background-color: #222;
+
+  > .image {
+    object-fit: cover;
+    width: 100%;
+    max-height: 350px;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+  > .description {
+    font-size: 1.25rem;
+    line-height: 1.61;
+    color: #bababa;
+    padding: 8px 32px;
+    max-height: 350px;
+    overflow-y: scroll;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #9d9d9d;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #5b5b5b;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+
+  > .text {
+    padding: 8px 0;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .block {
+    margin: 0 64px;
+  }
+}
+
+.block > .header {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  color: #fff;
+  margin: 64px;
+
+  > .category {
+    margin: 0;
+    font-weight: 300;
+  }
+
+  > .title {
+    margin: 0;
+    font-size: 4rem;
+  }
+}

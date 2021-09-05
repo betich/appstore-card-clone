@@ -1,0 +1,49 @@
+.block {
+  cursor: pointer;
+  overflow: hidden;
+  height: 100%;
+  transition: filter 0.1s ease-in;
+  border-radius: 10%;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+
+  > .image {
+    transition: transform 0.2s ease-in;
+    object-fit: cover;
+    border-radius: 10%;
+    width: 100%;
+  }
+
+  &:hover > .image {
+    transform: scale(1.1);
+  }
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+.block > .header {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  color: #fff;
+  margin: 24px;
+
+  > .category {
+    margin: 0;
+    font-weight: 300;
+  }
+
+  > .title {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .block {
+    margin: 0 auto;
+    max-width: 350px;
+  }
+}
